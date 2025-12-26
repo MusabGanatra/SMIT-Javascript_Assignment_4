@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Age Group Identifier
+        pahlaKam = prompt("Enter your age")
+        if (60 <= pahlaKam) {
+            alert("you are a Senior Citizen")
+        } else if (20 <= pahlaKam) {
+            alert("you are a Adult")
+        } else if (13 <= pahlaKam) {
+            alert("you are a Teenager")
+        } else if (0 <= pahlaKam) {
+            alert("you are a child")
+        } else {
+            alert("you enter the Invalid Input or Age")
+        }
+
+
+        // 2. Even or Odd Number
+        doosraKam = prompt("Enter your favorite number")
+        if (0 == doosraKam % 2) {
+            alert("your favorite number is even")
+        } else {
+            alert("your favorite number is odd")
+        }
+
+
+        // 3. Positive, Negative, or Zero
+        teesraKam = prompt("Enter your favorite number")
+        if (0 < teesraKam) {
+            alert("your favorite number is positive")
+        } else if (0 == teesraKam) {
+            alert("your favorite number is zero")
+        } else {
+            alert("your favorite number is negative")
+        }
+
+
+        // 4. Vowel or Consonant Checker
+        let letter = prompt("Koi ek letter enter karein:");
+        if (letter.length !== 1) {
+            alert("Invalid Input");
+        }
+        else if (letter >= 'a' && letter <= 'z' || letter >= 'A' && letter <= 'Z') {
+            if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u' || letter === 'A' || letter === 'E' || letter === 'I' || letter === 'O' || letter === 'U'
+            ) {
+                alert("Yeh Vowel hai");
+            }
+            else {
+                alert("Yeh Consonant hai");
+            }
+        }
+        else {
+            alert("Invalid Input");
+        }
+
+
+        // 5. Simple Calculator
+        let num1 = parseFloat(prompt("Enter first number:"));
+        let operator = prompt("Enter operator (+, -, *, /):");
+        let num2 = parseFloat(prompt("Enter second number:"));
+        if (operator === "+") {
+            alert("Result: " + (num1 + num2));
+        }
+        else if (operator === "-") {
+            alert("Result: " + (num1 - num2));
+        }
+        else if (operator === "*") {
+            alert("Result: " + (num1 * num2));
+        }
+        else if (operator === "/") {
+            if (num2 === 0) {
+                alert("Error: Division by zero is not allowed");
+            } else {
+                alert("Result: " + (num1 / num2));
+            }
+        }
+        else {
+            alert("Invalid operator");
+        }
+
+
+        // 6. Leap Year Checker
+        let year = parseInt(prompt("Enter a year:"));
+        if (year % 400 === 0) {
+            alert(year + " is a Leap Year");
+        }
+        else if (year % 4 === 0 && year % 100 !== 0) {
+            alert(year + " is a Leap Year");
+        }
+        else {
+            alert(year + " is NOT a Leap Year");
+        }
+
+
+        // 7. Temperature Checker
+        panchwaKam = prompt("what is the tamprature of today?")
+        if (30 <= panchwaKam) {
+            alert("Today wather is very hot")
+        } else if (20 <= panchwaKam) {
+            alert("Today wather is Warm")
+        } else if (10 <= panchwaKam) {
+            alert("Today wather is Cool")
+        } else {
+            alert("Today wather is cold")
+        }
+
+
+        // 8. Grade Calculator
+        atwaKam = prompt("Enter your result")
+        if (90 <= atwaKam) {
+            alert("A Grade")
+        } else if (80 <= atwaKam) {
+            alert("B Grade")
+        } else if (70 <= atwaKam) {
+            alert("C Grade")
+        } else if (60 <= atwaKam) {
+            alert("D Grade")
+        } else if (50 <= atwaKam) {
+            alert("E Grade")
+        } else if (0 <= atwaKam) {
+            alert("Fail")
+        } else {
+            alert("Invalid Input")
+        }
+
+
+        //9. Largest of Three Numbers 
+        let number1 = Number(prompt("Enter first number:"));
+        let number2 = Number(prompt("Enter second number:"));
+        let number3 = Number(prompt("Enter third number:"));
+        if (number1 === number2 && number2 === number3) {
+            alert("All numbers are equal");
+        } else if (number1 > number2 && number1 > number3) {
+            alert("Largest number is " + number1);
+        } else if (number2 > number1 && number2 > number3) {
+            alert("Largest number is " + number2);
+        } else {
+            alert("Largest number is " + number3);
+        }
+
+
+        // 10. Login System
+        username = "abcd"
+        password = 123456
+        userName = prompt("Enter your user name")
+        passWord = Number(prompt("Enter your password"))
+        if (username === userName && password === passWord) {
+            alert( "Login Successful")
+        } else if (username !== userName || passWord !== password) {
+            alert("Incorrect Credentials")
+        } else {
+            alert("Please enter all details")
+        }
+    </script>
+</body>
+
+</html>
